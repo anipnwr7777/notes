@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this is what devs usually do for all the elements on html page */
+        * {
+            box-sizing: border-box;
+        }
+        .child {
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            border: 10px solid red;
+            padding: 20px;
+            margin: 10px;
+        }
+        .parent {
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <!-- border-box is apne me rhene ka, bahar mat failo
+    content-box is padding, border, margin will spill out
+    by default content-box is what html gives -->
+
+    <div class="parent">
+        <div class="child">
+            content
+        </div>
+    </div>
+</body>
+</html>
