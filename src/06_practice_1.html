@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 20px;
+            background-color: #222222;
+            color: #ffffff;
+        }
+        nav div ul {
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            cursor: pointer;
+            gap: 20px;
+        }
+        nav div button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        nav div button:hover {
+            background-color: #e6dddd;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #222222;
+            color: #ffffff;
+            padding: 40px 80px;
+        }
+        .hero div {
+            width: 50%;
+        }
+        .hero div h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero div p {
+            font-size: 1.2rem;
+            color: #757272;
+            margin-bottom: 1rem;
+        }
+        .hero div button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+        .hero div img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #ffffff;
+        }
+        .hero div img:hover {
+            transform: rotate(3deg);
+            transition: all 0.5s ease-in-out;
+        }
+        .logo-text {
+            text-align: center;
+            margin: 20px 0px;
+            font-size: 3rem;
+            color: #222222;
+        }
+        .logo {
+            display: flex;
+            border: 2px solid black;
+            margin: 20px 10%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo div img {
+            width: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .three-card {
+            display: flex;
+            margin: 150px 150px;
+            justify-content: space-evenly;
+            border: 2px solid black;
+            padding: 20px 20px;
+            box-shadow: 0 0 10px black;
+        }
+        .three-card div img {
+            height: 200px;
+        }
+        .card {
+            border: 2px solid black;
+            padding: 5px;
+            width: 20%;
+            border-radius: 15px;
+            box-shadow: 0 0 10px black;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .card p {
+            margin-top:  10px;
+        }
+
+        @media screen and (max-width: 976px) {
+            .three-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .three-card div {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <p>Mylogo</p>
+        </div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <button>
+                Signup
+            </button>
+            <button>Login</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Hero title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda dolor ea cupiditate facere itaque excepturi consequatur maiores. Itaque, explicabo molestias, vel alias, repellendus nostrum neque voluptatem perspiciatis similique necessitatibus sunt laborum minima? Vel quis distinctio ullam maxime dolor explicabo, cum ea odit mollitia impedit, blanditiis quasi autem quae expedita.
+            </p>
+            <button>Sign up</button>
+        </div>
+        <div>
+            <img 
+                src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" 
+                alt="" 
+                width="400px"
+            >
+        </div>
+    </section>
+
+    <h2 class="logo-text">Our Clients</h2>
+    <section class="logo">
+        <div><img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt=""></div>
+        <div><img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt=""></div>
+        <div><img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt=""></div>
+        <div><img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt=""></div>
+        <div><img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt=""></div>
+        <div><img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt=""></div>
+    </section>
+
+    <section class="three-card">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt="">
+            <h3>Card title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, incidunt!</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt="">
+            <h3>Card title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, incidunt!</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2022/01/11/21/48/link-6931554_1280.png" alt="">
+            <h3>Card title</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, incidunt!</p>
+        </div>
+    </section>
+</body>
+</html>
