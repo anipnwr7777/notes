@@ -1,0 +1,132 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  /* Add your styles here */
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+h1 {
+  /* Add your styles here */
+}
+
+.pricing-heading {
+  /* Add your styles here */
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px #F1F1F1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 380px;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  border: 2px solid #FF9532;
+  position: relative;;
+}
+
+.popular-badge {
+  /* Add your styles here */
+  background-color: #FF9532;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.price {
+  /* Add your styles here */
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.period {
+  /* Add your styles here */
+  color: #7A91A9;
+  font-size: 15px;
+}
+
+.features {
+  /* Add your styles here */
+}
+
+.features li {
+  text-align: center;
+  margin-bottom: 5px;
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.features li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('assets/chaicodelogo.png');
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 15%; 
+  transform: translateY(-50%);
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #FF9532;
+  border: none;
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+}
