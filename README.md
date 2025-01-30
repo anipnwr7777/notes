@@ -4,9 +4,8 @@
 The intention is to share quick personal notes and to help out the chai code community (even if 1 person is helped, motive is achieved)
 
 ### How to follow : 
-- Files present at the root are named starting with 01 (means lecture 1), 02 (means lecture 2), .... 11 (means lecture 11)
-- `src/` contains code supporting the live classes, no such numbering is followed over here, the names are self explanatory.
-- For now all `html` documents are standalone and live server extension can be used to view the content on webpage.
+- Root contains folders named 01, 02, 03 ... These are meant to contain broadly all things done for a given lecture.
+- All the notes and the code done for each class including the assignments can be found inside the respective class/lecture folder.
 
 
 **Notes** : 
